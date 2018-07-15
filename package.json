@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "chai": "^4.1.2"
+    "chai": "^4.1.2",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
   },
   "devDependencies": {
     "mocha": "^5.2.0"
   },
   "scripts": {
-    "test": "nodemon ./node_modules/mocha/bin/mocha"
+    "test": "nodemon ./node_modules/mocha/bin/mocha",
+    "start": "nodemon ./app.js"
   },
   "keywords": [],
   "author": "",
