@@ -24,4 +24,9 @@ const data = [
       return {...post};
   }
 
-  module.exports = { list: list, find: find};
+  const findByName = (name) => {
+    const postName = data.filter(post => post.name === name);
+    return [...postName];
+  }
+
+  module.exports = { list: list, find: find, findByName: findByName};
